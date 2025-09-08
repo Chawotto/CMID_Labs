@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>powerwindow</class>
+ <widget class="QWidget" name="powerwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab 1: Power Management</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+    background-color: #1E1E2E;
+    font-family: Segoe UI;
+    }
+    QPushButton {
+    background-color: #5E81AC;
+    color: #ECEFF4;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #4C566A;
+    }
+    QPushButton:hover {
+    background-color: #81A1C1;
+    }
+    QPushButton:pressed {
+    background-color: #4C566A;
+    }
+    QLabel {
+    font-size: 16px;
+    color: #D8DEE9;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="purpleLabel">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="powerTypeLabel">
+     <property name="text">
+      <string>Тип энергопитания: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="batteryTypeLabel">
+     <property name="text">
+      <string>Тип батареи: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="batteryLevelLabel">
+     <property name="text">
+      <string>Уровень заряда: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="powerModeLabel">
+     <property name="text">
+      <string>Режим энергосбережения: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="batteryLifeLabel">
+     <property name="text">
+      <string>Время работы аккумулятора: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="remainingTimeLabel">
+     <property name="text">
+      <string>Оставшееся время: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="sleepButton">
+       <property name="text">
+        <string>Спящий режим</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="hibernateButton">
+       <property name="text">
+        <string>Гибернация</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="text">
+        <string>Назад</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exitButton">
+       <property name="text">
+        <string>Выход</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

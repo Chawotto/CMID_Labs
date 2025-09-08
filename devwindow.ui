@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>devwindow</class>
+ <widget class="QWidget" name="devwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>109</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>В разработке</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+                QWidget {
+                background-color: #1E1E2E;
+                font-family: Segoe UI;
+                }
+                QPushButton {
+                background-color: #5E81AC;
+                color: #ECEFF4;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                border: 1px solid #4C566A;
+                }
+                QPushButton:hover {
+                background-color: #81A1C1;
+                }
+                QPushButton:pressed {
+                background-color: #4C566A;
+                }
+                QLabel {
+                font-size: 16px;
+                color: #D8DEE9;
+                }
+                QLabel#sadPurpleLabel {
+                background-color: #2E3440;
+                padding: 5px;
+                border-radius: 5px;
+                }
+            </string>
+  </property>
+  <widget class="QLabel" name="sadPurpleLabel">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>100</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>328</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Эта лабораторная работа еще в разработке!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>141</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="exitButton">
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="backButton">
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QWidget" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Laboratory Works</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+                QWidget {
+                background-color: #1E1E2E;
+                font-family: Segoe UI;
+                }
+                QPushButton {
+                background-color: #5E81AC;
+                color: #ECEFF4;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                border: 1px solid #4C566A;
+                }
+                QPushButton:hover {
+                background-color: #81A1C1;
+                }
+                QPushButton:pressed {
+                background-color: #4C566A;
+                }
+                QLabel {
+                font-size: 16px;
+                color: #D8DEE9;
+                }
+                QLabel#purpleLabel {
+                background-color: #2E3440;
+                padding: 5px;
+                border-radius: 5px;
+                }
+                QLabel#descriptionLabel {
+                background-color: #1E1E2E;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 14px;
+                text-align: left;
+                min-width: 100px;
+                }
+            </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="imageDescriptionLayout">
+     <item>
+      <widget class="QLabel" name="purpleLabel">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="descriptionLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Выберите лабораторную работу</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="lab1Button">
+       <property name="text">
+        <string>Lab 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="lab2Button">
+       <property name="text">
+        <string>Lab 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="lab3Button">
+       <property name="text">
+        <string>Lab 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="lab4Button">
+       <property name="text">
+        <string>Lab 4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="lab5Button">
+       <property name="text">
+        <string>Lab 5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="lab6Button">
+       <property name="text">
+        <string>Lab 6</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="exitButton">
+     <property name="text">
+      <string>Выход</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
