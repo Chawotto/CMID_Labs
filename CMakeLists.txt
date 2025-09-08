@@ -17,17 +17,17 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
 
 add_executable(ilabs
-        devwindow.ui
-        devwindow.cpp
-        headers/devwindow.h
-        powerwindow.ui
-        powerwindow.cpp
-        headers/powerwindow.h
-        mainwindow.ui
-        mainwindow.cpp
-        headers/mainwindow.h
-        main.cpp
-        resources.qrc
+        src/devwindow.ui
+        src/devwindow.cpp
+        src/headers/devwindow.h
+        src/powerwindow.ui
+        src/powerwindow.cpp
+        src/headers/powerwindow.h
+        src/mainwindow.ui
+        src/mainwindow.cpp
+        src/headers/mainwindow.h
+        src/main.cpp
+        src/resources.qrc
 )
 
 target_link_libraries(ilabs
