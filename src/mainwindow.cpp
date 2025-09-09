@@ -59,7 +59,7 @@ void mainwindow::setDefaultImage() {
     } else {
         currentFrame = 0;
         ui->purpleLabel->setPixmap(preloadedMainFrames[currentFrame]);
-        animationTimer->start(100); // 100 мс (~10 кадров/с)
+        animationTimer->start(100);
         qDebug() << "done";
     }
 }

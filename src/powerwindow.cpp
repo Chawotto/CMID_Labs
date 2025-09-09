@@ -7,7 +7,6 @@
 #include <QDebug>
 #include <QProcess>
 
-
 powerwindow::powerwindow(QWidget *parent) :
     QWidget(parent), ui(new Ui::powerwindow), mainWindow(nullptr) {
     ui->setupUi(this);
@@ -51,7 +50,7 @@ void powerwindow::updateAnimation(bool isCharging) {
         delete purpleMovie;
         purpleMovie = new QMovie(gifPath);
         if (!purpleMovie->isValid()) {
-            qDebug() << "Failed to load GIF:" << gifPath;
+            qDebug() << "Failed to load:" << gifPath;
         }
         ui->purpleLabel->setMovie(purpleMovie);
         purpleMovie->start();
@@ -129,14 +128,11 @@ QString powerwindow::getPowerSaverMode() {
 QString powerwindow::getBatteryLifeTime() {
     SYSTEM_POWER_STATUS status;
     if (GetSystemPowerStatus(&status)) {
-        if (status.ACLineStatus == 1) {
-            return "Подключено к сети";
-        }
-        if (status.BatteryLifeTime == (DWORD)-1) {
-            return "Расчет времени...";
+        if (status.BatteryFullLifeTime == (DWORD)-1) {
+            return "Неизвестно";
         }
 
-        int seconds = status.BatteryLifeTime;
+        int seconds = status.BatteryFullLifeTime;
         int hours = seconds / 3600;
         int minutes = (seconds % 3600) / 60;
         return QString("%1 ч %2 мин").arg(hours).arg(minutes);
